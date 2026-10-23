@@ -10,3 +10,6 @@ zstyle :compinstall filename '/home/alieng/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# Configure Bitwarden SSH Agent
+export SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock
