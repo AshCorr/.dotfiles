@@ -1,0 +1,7 @@
+binds {
+    Mod+Ctrl+V hotkey-overlay-title="Clipboard: Open" { spawn "dms" "ipc" "call" "clipboard" "open"; }
+    Mod+space hotkey-overlay-title="Spotlight Bar: Toggle" { spawn "dms" "ipc" "call" "spotlight-bar" "toggle"; }
+    Mod+B hotkey-overlay-title="Launch Browser" { spawn "firefox"; }
+    Mod+D hotkey-overlay-title="Run an Application: Discord" { spawn "discord"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+}

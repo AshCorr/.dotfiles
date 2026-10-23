@@ -1,0 +1,42 @@
+# Boot and base system
+base
+linux
+linux-firmware
+amd-ucode
+efibootmgr
+grub
+
+# GPU drivers
+nvidia-open
+nvidia-utils
+
+# Networking
+networkmanager
+
+# Desktop environment and session
+niri
+dms-shell
+polkit
+xwayland-satellite
+
+# Theming and fonts
+matugen
+
+# Terminals and shells
+sudo
+vim
+less
+zsh
+bind
+
+# Applications and editors
+kitty
+code
+discord
+firefox
+opencode
+prismlauncher
+steam
+
+# Version control
+git

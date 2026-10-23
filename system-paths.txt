@@ -1,0 +1,28 @@
+# Paths to mirror between the live filesystem and ./system.
+#
+# Each line is an absolute path:
+#
+#   /etc/NetworkManager/conf.d/     directory: every regular file below it
+#   /etc/sudoers 0440               file with an explicit mode
+#
+# Blank lines, comments, and trailing # comments are ignored. An optional
+# second field sets the mode applied to the live file. Without it, sudoers
+# files default to 0440 and everything else to 0644. Repository copies are
+# stored read/write (0644, or 0755 for executable modes) so they stay editable.
+# Paths containing spaces are not supported.
+#
+# Anything listed here is copied verbatim into ./system. Avoid secrets such as
+# /etc/shadow, private keys, and Wi-Fi credentials.
+
+# DNS
+/etc/NetworkManager/conf.d/
+/etc/systemd/resolved.conf.d/
+
+# Privilege escalation
+/etc/sudoers 0440
+/etc/sudoers.d/ 0440
+
+# Other examples (uncomment to track):
+# /boot/grub/grub.cfg
+# /etc/fstab
+# /usr/local/bin/example 0755
